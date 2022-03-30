@@ -12,7 +12,7 @@ export default function save( { attributes } ) {
 
 		{attributes?.content?.map((obj, index)=> (
 			<div className="user">
-				<img src={attributes?.imageUrl}/>
+				<img src={obj?.media?.url}/>
 				<h1><b>{obj?.nom}</b></h1>
 				<h2> <span style="color: #EC2C7B;">❝</span>{obj?.com}<span style="color: #EC2C7B;"> ❞ </span> </h2>
 			</div>

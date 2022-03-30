@@ -16,13 +16,7 @@
     },
 	"title": {
 		"type": "string"
-	  },
-	"imageUrl": {
-		"type": "string"
-	  },
-	"imageId" : {
-		"type": "integer"
-		}
+	  }
 },
 	"textdomain": "gutenpride",
 	"editorScript": "file:./index.js",

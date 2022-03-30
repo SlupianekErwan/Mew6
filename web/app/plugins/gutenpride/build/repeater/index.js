@@ -45,20 +45,31 @@ function Edit(_ref) {
       });
     }
   }), content.map((value, index) => {
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
-      onSelect: media => setAttributes({
-        imageUrl: media.url,
-        imageId: media.id
-      }),
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
+      onSelect: media => {
+        const newContent = [...content];
+        newContent[index].media = {
+          url: media.url
+        };
+        setAttributes({
+          content: newContent
+        });
+      },
       allowedTypes: ALLOWED_MEDIA_TYPES,
       value: attributes === null || attributes === void 0 ? void 0 : attributes.imageId,
       render: _ref2 => {
+        var _value$media, _value$media2;
+
         let {
           open
         } = _ref2;
-        return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
+        return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, value !== null && value !== void 0 && (_value$media = value.media) !== null && _value$media !== void 0 && _value$media.url ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+          onClick: open,
+          src: value === null || value === void 0 ? void 0 : (_value$media2 = value.media) === null || _value$media2 === void 0 ? void 0 : _value$media2.url,
+          alt: ""
+        }) : (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
           onClick: open
-        }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Replace the image'));
+        }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Replace the image')));
       }
     })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
       className: "block-editor-repeater-nom",
@@ -165,15 +176,19 @@ function save(_ref) {
     className: "sec5__titre"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("b", null, attributes === null || attributes === void 0 ? void 0 : attributes.title)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
     className: "user__text flex"
-  }, attributes === null || attributes === void 0 ? void 0 : (_attributes$content = attributes.content) === null || _attributes$content === void 0 ? void 0 : _attributes$content.map((obj, index) => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
-    className: "user"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("img", {
-    src: attributes === null || attributes === void 0 ? void 0 : attributes.imageUrl
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("h1", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("b", null, obj === null || obj === void 0 ? void 0 : obj.nom)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("h2", null, " ", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
-    style: "color: #EC2C7B;"
-  }, "\u275D"), obj === null || obj === void 0 ? void 0 : obj.com, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
-    style: "color: #EC2C7B;"
-  }, " \u275E "), " ")))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+  }, attributes === null || attributes === void 0 ? void 0 : (_attributes$content = attributes.content) === null || _attributes$content === void 0 ? void 0 : _attributes$content.map((obj, index) => {
+    var _obj$media;
+
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+      className: "user"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("img", {
+      src: obj === null || obj === void 0 ? void 0 : (_obj$media = obj.media) === null || _obj$media === void 0 ? void 0 : _obj$media.url
+    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("h1", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("b", null, obj === null || obj === void 0 ? void 0 : obj.nom)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("h2", null, " ", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
+      style: "color: #EC2C7B;"
+    }, "\u275D"), obj === null || obj === void 0 ? void 0 : obj.com, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
+      style: "color: #EC2C7B;"
+    }, " \u275E "), " "));
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
     className: "flex circle"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("svg", {
     width: "30",

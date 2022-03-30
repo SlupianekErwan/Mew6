@@ -14,15 +14,27 @@ export default function Edit( { attributes: { content = [] }, setAttributes, att
 			{content.map((value, index) => {
 				return (
 					<>
+						<br></br>
 
 						<MediaUploadCheck>
 							<MediaUpload
-								onSelect={(media) => setAttributes({ imageUrl: media.url, imageId: media.id })}
+								onSelect={(media) => { 
+									const newContent = [...content]
+									newContent[index].media = {url : media.url}
+									setAttributes({ content: newContent })
+								}}
 								allowedTypes={ ALLOWED_MEDIA_TYPES }
 								value={ attributes?.imageId }
 								render={ ( { open } ) => (
-								<Button onClick={ open }>{__('Replace the image')}</Button>
-								) }
+									<div>
+										{value?.media?.url ? (
+											<img onClick={ open } src={value?.media?.url} alt="" />
+									 	) : (
+											<Button onClick={ open }>{__('Replace the image')}</Button>
+									 	)}
+									</div>
+								)}
+	
 							/>
 						</MediaUploadCheck>	
 

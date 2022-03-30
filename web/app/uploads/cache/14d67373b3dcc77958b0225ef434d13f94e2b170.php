@@ -8,10 +8,11 @@
 
     <div class="artists">
               <div class="artists__music">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image2-2.jpg">
+                <?php echo e(the_post_thumbnail()); ?>
+
                 <div class="artists__text">
-                    <p><b>STROMAE</b> Multitude</p>
-                    <p class="artists__date">2021</p>
+                    <p><b><?php echo e(the_terms(get_the_id(), 'artist')); ?></b> <?php echo e(the_title()); ?></p>
+                    <p class="artists__date">2021</p> 
                     <p>Hip hop, Electronic</p>
                 </div>
               </div>
