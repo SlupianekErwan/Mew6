@@ -1,0 +1,34 @@
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/phone-text/editor.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-phone-text {
+  background-color: #FFFFFF;
+}
+
+.wp-block-create-block-phone-text .block-editor-phone-text-title {
+  font-size: 42px;
+  width: 70%;
+  color: #00184A;
+}
+
+.wp-block-create-block-phone-text .block-editor-phone-text-subtitle {
+  font-size: 24px;
+  color: #00184A;
+}
+
+.wp-block-create-block-phone-text .block-editor-phone-text-btn {
+  font-size: 24px;
+  color: #FFFFFF;
+  border: solid 5px #EC2C7B;
+  background-color: #EC2C7B;
+  border-radius: 5px;
+  width: 300px;
+  height: 75px;
+}
+
+/*# sourceMappingURL=index.css.map*/

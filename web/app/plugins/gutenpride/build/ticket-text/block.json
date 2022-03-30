@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/ticket-text",
+	"version": "0.1.0",
+	"title": "Example - ticket text",
+	"category": "widgets",
+	"icon": "visibility",
+	"description": "Example block written with ESNext standard and JSX support – build step required.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+    "title": {
+      "type": "string"
+    },
+	"subtitle": {
+      "type": "string"
+    },
+	"btn":{
+		"type":"string"
+	},
+	"imageUrl": {
+		"type": "string"
+	  },
+	"imageId" : {
+		"type": "integer"
+		}	
+  },
+	"textdomain": "gutenpride",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

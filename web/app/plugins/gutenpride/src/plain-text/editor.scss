@@ -1,0 +1,41 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-plain-text {
+	background: rgba(0, 90, 197, 0.8);
+}
+
+.wp-block-create-block-plain-text .block-editor-plain-text-title {
+    font-size: 24px;
+    color:#FFFFFF;
+    width: 80%;
+    background: rgba(0, 90, 197, 0.8);
+}
+
+.wp-block-create-block-plain-text .block-editor-plain-text-subtitle {
+	font-size: 24px;
+	color: #FFFFFF;
+	width: 90%;
+    background: rgba(0, 90, 197, 0.8);
+}
+
+.wp-block-create-block-plain-text .block-editor-plain-text-desc {
+	font-size: 24px;
+	color: #FFFFFF;
+	width: 90%;
+    background: rgba(0, 90, 197, 0.8);
+}
+
+.wp-block-create-block-plain-text .block-editor-plain-text-btn {
+    font-size: 24px;
+    color: #FFFFFF;
+    border: solid 5px #EC2C7B;
+    background-color: #EC2C7B;
+    border-radius: 5px;
+    width: 215px;
+    height: 72.47px;
+}
+

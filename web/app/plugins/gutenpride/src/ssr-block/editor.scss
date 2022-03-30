@@ -1,0 +1,25 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-ssr-block {
+	background: rgba(0, 90, 197, 0.8);
+}
+
+.wp-block-create-block-ssr-block .block-editor-ssr-block-title {
+	font-size: 36px; 
+	color: #FFFFFF;
+	background: rgba(0, 90, 197, 0.8);
+}
+
+.wp-block-create-block-ssr-block .block-editor-ssr-block-btn {
+	border: solid 2px #001A49;
+	background-color: #001A49;
+	font-size: 24px;
+	width: 300px;
+	height: 75px;
+	border-radius: 5px;
+	color: #FFFFFF;
+}

@@ -1,0 +1,33 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-ticket-text {
+	background-color: #FFFFFF;
+}
+
+.wp-block-create-block-ticket-text .block-editor-ticket-text-title {
+	font-size: 42px;
+	color: #000000;
+	width: 70%;
+}
+
+.wp-block-create-block-ticket-text .block-editor-ticket-text-subtitle {
+	font-size: 24px;
+	color: #000000;
+	width: 70%;
+}
+
+.wp-block-create-block-ticket-text .block-editor-ticket-text-btn {
+	font-size: 24px;
+	color: #000000;
+	border: solid 5px #FFFFFF;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	width: 300px;
+	height: 75px;
+}
+
+
