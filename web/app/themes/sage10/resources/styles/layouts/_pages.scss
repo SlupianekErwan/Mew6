@@ -1,0 +1,291 @@
+body {
+  background: var(--grey-1);
+  margin: 0 auto;
+}
+
+.container2 {
+  max-width: 100%;
+}
+
+.wrap{
+
+background: rgba(0, 90, 197, 0.8);
+
+main {
+
+  .circle1{
+    position: absolute; 
+    top: 494.42px;
+  }
+
+  .circle2{
+    position: absolute; 
+    top: 945.05px; 
+    left:89.6%;
+  }
+
+  .circle3{
+    position: absolute; 
+    top: 2065px; 
+    left: 93.7%;
+  }
+
+  .circle4{
+    position: absolute; 
+    top: 2960px;
+  }
+
+  .circle5{
+    position: absolute; 
+    top: 3599.22px; 
+    left: 90.3%;
+  }
+
+  .circle6{
+    position: absolute; 
+    top: 4777.57px;
+  }
+
+
+  .sec1 {
+
+  h1{
+    font-size: 42px;
+    color: #FFFFFF;
+    width: 80%;
+  }
+
+  h2{
+   font-size: 24px;
+   color: #FFFFFF;
+   width: 90%;
+  }
+
+  .btn__sec1{
+    font-size: 24px;
+    color: #FFFFFF;
+    border: solid 5px #EC2C7B;
+    background-color: #EC2C7B;
+    border-radius: 5px;
+    width: 215px;
+    height: 72.47px;
+  }
+
+  &__absolute{
+    position: absolute;
+    top: 360px;
+    left: 134px;
+  }
+
+  img {
+    width:100%;
+  }
+
+}
+
+  .sec2 {
+
+    h1 {
+      font-size: 36px; 
+      color: #FFFFFF;
+      margin: 200px 0 50px 134px;
+    }
+
+    .artisits__disc {
+      border: solid 2px #001A49;
+      background-color: #001A49;
+      font-size: 24px;
+      width: 300px;
+      height: 75px;
+      border-radius: 5px;
+      color: #FFFFFF;
+      margin: 100px 0 100px 520px;
+    }
+ 
+    .artists .artists__music .artists__text {
+      border: solid 10px #FFFFFF;
+      width: 315px;
+      background-color: #FFFFFF;
+      border-radius: 5px;
+
+      .artists__date{
+        border: solid 2px;
+        background: rgba(0, 90, 197, 0.8);
+        color: #FFFFFF; 
+        border-radius: 5px;
+        padding: 0 5px 0 5px;
+        width: 50px;
+      }
+    }
+
+    .artists img {
+      width:83%;
+    }
+
+    .artists__victory{
+      margin: 0 0 0 134px;
+    }
+
+  }
+
+    .sec3 {
+
+      background-color: #FFFFFF;
+
+      .phone__text{
+
+        margin: 250px 0 0 134px;
+
+        h1 {
+          font-size: 42px;
+          width:70%;
+          color:#00184A;
+        }
+
+        h2 {
+          font-size: 24px;
+          color:#00184A;
+        }
+
+        .btn__sec3 {
+            font-size: 24px;
+            color: #FFFFFF;
+            border: solid 5px #EC2C7B;
+            background-color: #EC2C7B;
+            border-radius: 5px;
+            width: 300px;
+            height: 75px;
+        }
+
+      }
+
+      img {
+        width: 20%;
+        margin: 200px 200px 200px 0;
+      }
+
+    }
+
+
+    .sec4 {
+
+      .ticket__text{
+
+        margin: 200px 0 200px 50px;
+
+        h1 {
+          font-size: 42px;
+          color: #FFFFFF;
+          width: 70%;
+        }
+
+        h2 {
+          font-size: 24px;
+          color: #FFFFFF;
+          width: 70%;
+        }
+
+        .btn__sec4 {
+            font-size: 24px;
+            color: #000000;
+            border: solid 5px #FFFFFF;
+            background-color: #FFFFFF;
+            border-radius: 5px;
+            width: 300px;
+            height: 75px;
+        }
+
+      }
+
+      img {
+        margin: 200px 0 200px 134px;
+      }
+
+    }
+
+    .sec5 {
+
+      background-color: #FFFFFF;
+
+
+      &__titre {
+        font-size: 42px;
+        text-align: center;
+        padding: 80px 0 100px 0;
+      }
+
+      .user {
+
+        margin: 0 0 100px 80px;
+
+        &__text {
+        margin: 0 0 0 134px;
+        }
+
+        h1 {
+          font-size: 24px;
+          text-align: center;
+          margin: 60px 0 0 0;
+          color: #00184A;
+        }
+
+        h2 {
+          font-size: 24px;
+          width:311px;
+          text-align: center;
+          margin: 20px 0 0 0 ;
+        }
+
+      }
+
+      .circle {
+        padding: 0 0 8% 75%;
+
+        svg{
+          margin: 0 0 0 20px;
+        }
+      }
+
+    }
+
+    .sec6 {
+
+      background-color: #00184A;
+
+      h1 {
+        font-size: 49px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 100px 0 100px 0;
+      }
+
+      .question {
+
+        margin: 0 0 20px 134px;
+
+        border: solid 5px #FFFFFF;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        width: 80%;
+        padding:1%;
+
+        &__text {
+          padding: 0 0 100px 0;
+        }
+
+        h2{
+          font-size: 24px;
+          color:#00184A;
+        }
+
+        p {
+          color:#00184A;
+        }
+
+      }
+
+    }
+
+}
+
+}

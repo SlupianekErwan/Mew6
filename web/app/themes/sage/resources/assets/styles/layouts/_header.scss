@@ -1,0 +1,40 @@
+.banner {
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 90, 197, 0.8);
+
+  .brand {
+    
+    img{
+      margin: 10% 0 10% 0;
+    }
+ 
+  }
+
+ nav {
+  @apply list-none p-0 flex flex-wrap;
+  margin: 2% 0 0 50%;
+
+  a {
+  @apply inline-block px-4 py-8 border-none;
+  color: #FFFFFF;
+
+  &:hover {
+    color: darken(#525ddc, 30%);
+  }
+
+  }
+
+  select {
+    height: 20%;
+    width: 12%;
+    margin: 35px 0 0 8px;
+  }
+
+
+}
+
+}
+
