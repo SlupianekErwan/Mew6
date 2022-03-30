@@ -13,7 +13,9 @@ export default function Edit( { attributes: { content = [] }, setAttributes, att
 			
 			{content.map((value, index) => {
 				return (
-					<>
+
+					<div className="block-editor-repeater-flex">
+
 						<br></br>
 
 						<MediaUploadCheck>
@@ -38,47 +40,31 @@ export default function Edit( { attributes: { content = [] }, setAttributes, att
 							/>
 						</MediaUploadCheck>	
 
-						<PlainText
-							className={"block-editor-repeater-nom"}
-							placeholder={__('nom')}
-							value={value.nom}
-							onChange={(nom) => {
+						<PlainText className={"block-editor-repeater-nom"} placeholder={__('nom')} value={value.nom} onChange={(nom) => {
 								const newContent = [...content]
 								newContent[index].nom = nom
-								setAttributes({ content: newContent })
-							}}
-						/>	
+								setAttributes({ content: newContent }) }}/>	
 
-						<PlainText
-							className={"block-editor-repeater-com"}
-							placeholder={__('com')}
-							value={value.com}
-							onChange={(com) => {
+						<PlainText className={"block-editor-repeater-com"} placeholder={__('com')} value={value.com} onChange={(com) => {
 								const newContent = [...content]
 								newContent[index].com = com
-								setAttributes({ content: newContent })
-							}}
-						/>		
+								setAttributes({ content: newContent }) }}/>		
 
-						<Button
-							onClick={() => {
+						<Button onClick={() => {
 								const newContent = [
 									...content.slice(0, index),
 									...content.slice(index + 1)
 								]
-								setAttributes({ content: newContent })
-							}}
-						>{__('Supprimer')}
+								setAttributes({ content: newContent }) }}>
+							{__('Supprimer')} 
 						</Button>
-					</>
+					</div>
 				)
 			})}
-			<Button
-				onClick={() => {
+			<Button onClick={() => {
 					const newContent = [...content, {}]
-					setAttributes({ content: newContent })
-				}}
-			>{__('Ajouter')}
+					setAttributes({ content: newContent }) }}>
+				{__('Ajouter')}
 			</Button>
 		</>
 	);

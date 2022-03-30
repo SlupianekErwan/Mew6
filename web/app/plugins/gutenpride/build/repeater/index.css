@@ -10,6 +10,10 @@
   background: #FFFFFF;
 }
 
+.wp-block-create-block-repeater .block-editor-repeater-flex {
+  display: flex;
+}
+
 .wp-block-create-block-repeater .block-editor-repeater-title {
   font-size: 42px;
   text-align: center;
