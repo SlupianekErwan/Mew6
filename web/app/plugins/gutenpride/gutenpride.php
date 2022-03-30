@@ -42,6 +42,7 @@ function create_block_gutenpride_block_init() {
     register_block_type( __DIR__ . '/build/phone-text' );
     register_block_type( __DIR__ . '/build/plain-text' );
     register_block_type( __DIR__ . '/build/repeater' );
+    register_block_type( __DIR__ . '/build/repeater-avis' );
     register_block_type( __DIR__ . '/build/ssr-block', array('render_callback' => 'ssr_block_render') );
     register_block_type( __DIR__ . '/build/text-image' );
 }

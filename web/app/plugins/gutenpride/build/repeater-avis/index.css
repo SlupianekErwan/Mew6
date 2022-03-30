@@ -1,0 +1,28 @@
+/*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/repeater-avis/editor.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-repeater-avis {
+  background: rgba(0, 90, 197, 0.8);
+}
+
+.wp-block-create-block-repeater-avis .block-editor-repeater-avis-flex {
+  display: flex;
+}
+
+.wp-block-create-block-repeater-avis .block-editor-repeater-avis-title {
+  font-size: 49px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.wp-block-create-block-repeater-avis .block-editor-repeater-avis-quest {
+  font-size: 24px;
+  color: #00184A;
+}
+
+/*# sourceMappingURL=index.css.map*/
